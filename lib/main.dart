@@ -22,22 +22,11 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.green[900],
       ),
-      body: Center(
-        child: ElevatedButton.icon(
-          icon: Icon(
-              Icons.mail
-          ),
-          label: Text('Send'),
-          onPressed: () {
-            print("clicked");
-          },
-          style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all<Color>(Colors.green[900]),
-          ),
-        )
-        // Icon( Icons.airport_shuttle, size: 50, )
-        // Image.network('https://scontent.fktw1-1.fna.fbcdn.net/v/t1.6435-9/171555418_508131857229860_7059885913472867765_n.png?_nc_cat=106&ccb=1-3&_nc_sid=730e14&_nc_ohc=R5n-AKfertgAX8XY8o-&_nc_ht=scontent.fktw1-1.fna&oh=18a2723b28c9395044f214e989e4301f&oe=60AE416D'),
-
+      body: Container(
+        color: Colors.grey[400],
+        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+        margin: EdgeInsets.all(30),
+        child: Text('ZMITAC'),
       ),
       floatingActionButton: FloatingActionButton(
         child: Text('click'),
