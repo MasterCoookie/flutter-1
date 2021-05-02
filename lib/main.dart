@@ -25,75 +25,84 @@ class Home extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Column(
+          Expanded(
+            flex: 3,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  TextButton(
-                    onPressed: (){},
-                    child: Text("ZMITAC", style: TextStyle(color: Colors.amber),),
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(Colors.green[900]),
-                    ),
+                  Column(
+                    children: [
+                      TextButton(
+                        onPressed: (){},
+                        child: Text("ZMITAC", style: TextStyle(color: Colors.amber),),
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.green[900]),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(10),
+                        margin: EdgeInsets.symmetric(vertical: 25),
+                        child: Text('ZMITAC'),
+                        color: Colors.green[400],
+                      ),
+                      Text("Wykłady z fyzyki")],
                   ),
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    margin: EdgeInsets.symmetric(vertical: 25),
-                    child: Text('ZMITAC'),
-                    color: Colors.green[400],
+                  Column(
+                    children: [
+                      TextButton(
+                        onPressed: (){},
+                        child: Text("ZMITAC2", style: TextStyle(color: Colors.amber),),
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.green[900]),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(10),
+                        margin: EdgeInsets.symmetric(vertical: 25),
+                        child: Text('ZMITAC2'),
+                        color: Colors.green[400],
+                      ),
+                      Text("Wykłady z fyzyki2")],
                   ),
-                  Text("Wykłady z fyzyki")],
+                  Column(
+                    children: [
+                      TextButton(
+                        onPressed: (){},
+                        child: Text("ZMITAC3", style: TextStyle(color: Colors.amber),),
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStateProperty.all<Color>(Colors.green[900]),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(10),
+                        margin: EdgeInsets.symmetric(vertical: 25),
+                        child: Text('ZMITAC3'),
+                        color: Colors.green[400],
+                      ),
+                      Text("Wykłady z fyzyki3")],
+                  ),
+                ],
               ),
-              Column(
-                children: [
-                  TextButton(
-                    onPressed: (){},
-                    child: Text("ZMITAC", style: TextStyle(color: Colors.amber),),
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(Colors.green[900]),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    margin: EdgeInsets.symmetric(vertical: 25),
-                    child: Text('ZMITAC'),
-                    color: Colors.green[400],
-                  ),
-                  Text("Wykłady z fyzyki")],
-              ),
-              Column(
-                children: [
-                  TextButton(
-                    onPressed: (){},
-                    child: Text("ZMITAC", style: TextStyle(color: Colors.amber),),
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(Colors.green[900]),
-                    ),
-                  ),
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    margin: EdgeInsets.symmetric(vertical: 25),
-                    child: Text('ZMITAC'),
-                    color: Colors.green[400],
-                  ),
-                  Text("Wykłady z fyzyki")],
-              ),
-            ],
+            ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [Text(
-                'CZŁOWIEK ZMITAC PIJE PIWO',
-                style: TextStyle(
-                  color: Colors.red[900],
-                  fontSize: 25,
-                  backgroundColor: Colors.yellow[800],
-                  fontWeight: FontWeight.bold,
-                ),
-                textAlign: TextAlign.center,
+          Expanded(
+            flex: 4,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [Text(
+                  'CZŁOWIEK ZMITAC PIJE PIWO',
+                  style: TextStyle(
+                    color: Colors.red[900],
+                    fontSize: 25,
+                    backgroundColor: Colors.yellow[800],
+                    fontWeight: FontWeight.bold,
+                  ),
+                  textAlign: TextAlign.center,
 
-              ),],
+                ),],
+            ),
           )
 
         ],
